@@ -8,5 +8,13 @@ class Stringify
 
   def what_am_i
   	# YOUR IMPLEMENTATION HERE
+    if @name.blank?() || @adjective.blank?()
+      output = 'You are nothing!'
+
+    else
+      output = @name + ' is so ' + @adjective
+    end
+
+    return output
   end
 end
